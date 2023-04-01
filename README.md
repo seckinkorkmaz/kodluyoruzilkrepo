@@ -84,3 +84,32 @@ Your branch is ahead of 'origin/main' by 1 commit.
 #### gitk
 #### git checkout <-commit adress->
 #### git diff
+
+## git branch
+
+```
+ git switch -c <-branch-name->
+ Switched to a new branch 'new-branch'
+ 
+ seçkin@DESKTOP-V9MDHC8 MINGW64 ~/kodluyoruzilkrepo (new-branch)
+$ git branch -a
+  main
+* new-branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+$ git push origin new-branch
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.65 KiB | 1.65 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/seckinkorkmaz/kodluyoruzilkrepo/pull/new/new-branch
+remote:
+To https://github.com/seckinkorkmaz/kodluyoruzilkrepo.git
+ * [new branch]      new-branch -> new-branch
+
+```
